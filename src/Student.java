@@ -17,6 +17,8 @@ public class Student extends Person {
         return grade;
     }
 
+
+    @Override
     // Uses the toString from Person and adds on the grade
     public String toString() {
         return super.toString() + " Grade: " + grade;

@@ -17,6 +17,7 @@ public class Athlete extends Person {
         return sport;
     }
 
+    @Override
     // Uses the toString from Person and adds on the sport
     public String toString() {
         return super.toString() + " Sport: " + sport;
