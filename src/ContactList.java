@@ -19,7 +19,7 @@ public class ContactList {
         System.out.println("Select a type of contact to add: \n 1. Student \n 2. Athlete");
         int typeOfContact = input.nextInt();
         input.nextLine();
-        System.out.println("Please fill in the following information. \n First Name: ");
+        System.out.println("Please fill in the following information. \nFirst Name: ");
         String firstName = input.nextLine();
         System.out.println("Last Name: ");
         String lastName = input.nextLine();
@@ -59,6 +59,9 @@ public class ContactList {
                     }
                 }
             }
+            for (Person contact : contacts) {
+                System.out.println(contact);
+            }
         }
 
         if (sortBy == 1) {
@@ -71,6 +74,9 @@ public class ContactList {
                     }
                 }
             }
+            for (Person contact : contacts) {
+                System.out.println(contact);
+            }
         }
 
         if (sortBy == 2) {
@@ -82,6 +88,9 @@ public class ContactList {
                         contacts.set(j + 1, temp);
                     }
                 }
+            }
+            for (Person contact : contacts) {
+                System.out.println(contact);
             }
         }
     }
@@ -128,12 +137,13 @@ public class ContactList {
     public void run() {
         boolean hasEnded = false;
 
-        while (hasEnded) {
-            System.out.println("Menu: \n 1. Add Contact \n 2. List All Contacts By First" +
-                    " Name List 3. List All Contacts By Last Name \n 4. List All Contacts " +
-                    "By Phone Number \n 5. List All Students \n 6. Search by First Name \n" +
-                    "7. Search By Last Name \n 8. Search By Phone Number \n 0. Exit");
+        while (!hasEnded) {
+            System.out.println("Menu: \n1. Add Contact \n2. List All Contacts By First" +
+                    " Name List \n3. List All Contacts By Last Name \n4. List All Contacts " +
+                    "By Phone Number \n5. List All Students \n6. Search by First Name \n" +
+                    "7. Search By Last Name \n8. Search By Phone Number \n0. Exit");
             int inquiry = input.nextInt();
+            input.nextLine();
 
             if (inquiry == 1) {
                 addContact();
@@ -153,26 +163,25 @@ public class ContactList {
             else if (inquiry == 6) {
                 System.out.println("Enter a first name: ");
                 String firstName = input.nextLine();
-                searchByFirstName(firstName);
+                System.out.println(searchByFirstName(firstName));
             }
             else if (inquiry == 7) {
                 System.out.println("Enter a last name: ");
                 String lastName = input.nextLine();
-                searchByLastName(lastName);
+                System.out.println(searchByLastName(lastName));
             }
             else if (inquiry == 8) {
                 System.out.println("Enter a phone number: ");
                 String phoneNumber = input.nextLine();
-                searchByPhoneNumber(phoneNumber);
+                System.out.println(searchByPhoneNumber(phoneNumber));
             }
             else {
                 hasEnded = true;
             }
         }
     }
-}
-
-public static void main(String[] args) {
-    ContactList contactList = new ContactList();
-    contactList.run();
+    public static void main(String[] args) {
+        ContactList contactList = new ContactList();
+        contactList.run();
+    }
 }
