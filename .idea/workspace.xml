@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5490ec8c-72c9-42b2-b783-ff28bd5971d7" name="Changes" comment="Nearly complete with ContactList">
+    <list default="true" id="5490ec8c-72c9-42b2-b783-ff28bd5971d7" name="Changes" comment="Finishing 5. List All Students">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Athlete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705719163501</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finishing 5. List All Students">
+      <option name="closed" value="true" />
+      <created>1705720851459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705720851459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished Person, Student, and Athlete class. Working on ContactList Class" />
     <MESSAGE value="Nearly complete with ContactList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nearly complete with ContactList" />
+    <MESSAGE value="Finishing 5. List All Students" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing 5. List All Students" />
   </component>
 </project>
